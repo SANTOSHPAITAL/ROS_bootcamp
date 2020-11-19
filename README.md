@@ -75,4 +75,29 @@ v. **Messages**
 vi. **Services**
 
 - A ROS service is an object that can be called similar to a function from other nodes. It allows a request and a reply. An example might be an "add two ints" service.
+# Publisher and Subscriber:
+
+ROS nodes mechanism is to exchange data by sending and receiving messages, which transmitted on a topic, and each topic has a unique name .
+
+ If a node wants to share information, the one who send data to a topic is publisher. 
+
+And that one who wants to receive that information is subscriber on that same topic.
+
+## Some functions:
+
+### 1.Rosrun:
+
+It allows  to use the package name to run directly  a node within a package without  know its path.
+
+### 2.Rostopic list:
+
+It returns a list of ROS topics from the ROS master. It display a list of current topics.
+
+### 3.Rostopic echo:
+
+It display messages published to a topic.
+
+### 4.Rosmsg show:
+
+It is a command-line tool for displaying information about ROS Message types.
 
